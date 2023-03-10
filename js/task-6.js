@@ -10,3 +10,17 @@
  *! Делать проверку,что пользователь ввел именно число,
  *! а не произвольный набор символов, не нужно.
  */
+
+ let initialNumber = Numper(prompt ("Введите число!"));
+ let totalNumbers = 0;
+ let check = false;
+ do {
+    if (initialNumber){
+        totalNumbers += initialNumber;
+        initialNumber = Numper(prompt ("Введите число!"));
+        check = true;
+    } else{
+        alert (`Общая сумма введенных чисел равна ${totalNumbers}`);
+    }
+    check = false;  
+ } while (check);
